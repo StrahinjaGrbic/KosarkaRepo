@@ -1,0 +1,192 @@
+﻿@model KosarkaMVC.Models.Statistika
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Statistika</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Igrac.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Igrac.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utakmica.Sezona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utakmica.Sezona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojDresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojDresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Minutaza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Minutaza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwoptA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwoptA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwoptM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwoptM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThreeptA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThreeptA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThreeptM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThreeptM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FtA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FtA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FtM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FtM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OReb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OReb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DReb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DReb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.To)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pir)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,186 @@
+﻿@model KosarkaMVC.Models.Statistika
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Statistika</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Igrac.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Igrac.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utakmica.Sezona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utakmica.Sezona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojDresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojDresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Minutaza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Minutaza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwoptA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwoptA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwoptM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwoptM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThreeptA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThreeptA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThreeptM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThreeptM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FtA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FtA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FtM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FtM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OReb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OReb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DReb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DReb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.To)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pir)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

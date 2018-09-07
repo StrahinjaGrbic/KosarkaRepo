@@ -1,0 +1,66 @@
+﻿@model KosarkaMVC.Models.Igrac
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Igrac</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ekipa.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ekipa.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tezina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tezina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Godiste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Godiste)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

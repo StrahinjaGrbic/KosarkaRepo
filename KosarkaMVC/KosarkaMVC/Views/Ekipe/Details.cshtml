@@ -1,0 +1,98 @@
+﻿@model KosarkaMVC.Models.Ekipa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ekipa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sezona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sezona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trener)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trener)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojBodova)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojBodova)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojPobeda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojPobeda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojPoraza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojPoraza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcenatUspesnosti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcenatUspesnosti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostignutiPoeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostignutiPoeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimljeniPoeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimljeniPoeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KosRazlika)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KosRazlika)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

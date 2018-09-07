@@ -1,0 +1,153 @@
+﻿@model IEnumerable<KosarkaMVC.Models.Statistika>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Igrac.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Utakmica.Sezona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrojDresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Minutaza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TwoptA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TwoptM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThreeptA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThreeptM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FtA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FtM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OReb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DReb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ast)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.To)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Blk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pir)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Igrac.Ime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Utakmica.Sezona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrojDresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Minutaza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TwoptA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TwoptM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThreeptA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThreeptM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FtA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FtM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OReb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DReb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ast)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.To)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Blk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pir)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
