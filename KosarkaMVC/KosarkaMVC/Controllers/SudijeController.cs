@@ -8,17 +8,13 @@ using System.Web;
 using System.Web.Mvc;
 using KosarkaMVC.Interfaces;
 using KosarkaMVC.Models;
+using KosarkaMVC.Repository;
 
 namespace KosarkaMVC.Controllers
 {
     public class SudijeController : Controller
     {
-        private ISudijaRepository _sudijaRepository;
-
-        public SudijeController(ISudijaRepository sudijaRepository)
-        {
-            _sudijaRepository = sudijaRepository;
-        }
+        private ISudijaRepository _sudijaRepository = new SudijaRepository();
 
         // GET: Sudije
         public ActionResult Index()

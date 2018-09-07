@@ -8,22 +8,15 @@ using System.Web;
 using System.Web.Mvc;
 using KosarkaMVC.Interfaces;
 using KosarkaMVC.Models;
+using KosarkaMVC.Repository;
 
 namespace KosarkaMVC.Controllers
 {
     public class StatistikeController : Controller
     {
-        private IStatistikaRepository _statistikaRepository;
-        private IIgracRepository _igracRepository;
-        private IUtakmicaRepository _utakmicaRepository;
-
-        public StatistikeController(IStatistikaRepository statistikaRepository, IIgracRepository igracRepository,
-            IUtakmicaRepository utakmicaRepository)
-        {
-            _statistikaRepository = statistikaRepository;
-            _igracRepository = igracRepository;
-            _utakmicaRepository = utakmicaRepository;
-        }
+        private IStatistikaRepository _statistikaRepository = new StatistikaRepository();
+        private IIgracRepository _igracRepository = new IgracRepository();
+        private IUtakmicaRepository _utakmicaRepository = new UtakmicaRepository();
 
         // GET: Statistike
         public ActionResult Index()
